@@ -53,7 +53,7 @@ public class CartStepDefinitions {
     }
     @Then("item removed from cart")
     public void testDelete() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         assertEquals(Setup.driver.findElements(By.xpath("/html/body/div[6]/div/div[1]/div/table/tbody/tr")).size(), numberOfItems - 1);
     }
 }
